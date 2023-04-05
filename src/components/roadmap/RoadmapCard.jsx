@@ -19,9 +19,9 @@ const RoadmapCard = ({ id, title, progress, paragraph, keypoints }) => {
         </div>
         <hr className="h-px w-[30%] my-3 bg-gray-700 border-0" />
         <div>
-          {keypoints.map((point) => {
+          {keypoints.map((point, index) => {
             return (
-              <>
+              <React.Fragment key={index}>
                 <div className="flex space-x-2 font-light text-white py-1">
                   <div>
                     <MdOutlineKeyboardDoubleArrowRight
@@ -31,7 +31,7 @@ const RoadmapCard = ({ id, title, progress, paragraph, keypoints }) => {
                   </div>
                   <div>{point}</div>
                 </div>
-              </>
+              </React.Fragment>
             );
           })}
         </div>

@@ -23,9 +23,9 @@ const Roadmap = () => {
           </h1>
         </div>
         <div className="grid grid-cols-12 w-full gap-4 lg:gap-y-5">
-          {roadmap.map((item) => {
+          {roadmap.map((item, index) => {
             return (
-              <React.Fragment key={item.id}>
+              <React.Fragment key={index}>
                 <RoadmapCard
                   id={item.id}
                   title={item.title}
