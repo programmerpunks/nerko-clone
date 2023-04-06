@@ -26,7 +26,7 @@ const StartMinting = () => {
         </div>
         <div className="flex justify-center pt-10">
           <button className="font-bold md:text-2xl flex gap-2 text-white hover:scale-110 px-6 py-2 md:py-5 rounded-full bg-gradient-to-r from-[#2600fc] to-[#ff00ea]">
-            Get Started
+            <a href="/mint">Get Started</a>
           </button>
         </div>
       </div>

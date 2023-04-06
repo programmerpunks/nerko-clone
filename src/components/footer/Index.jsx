@@ -19,7 +19,13 @@ const Footer = () => {
               <div className="flex">
                 {social_links.map((item) => {
                   return (
-                    <a href={item.link} key={item.id} className="pr-4">
+                    <a
+                      href={item.link}
+                      key={item.id}
+                      className="pr-4"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
                       {item.icon}
                     </a>
                   );
@@ -29,16 +35,49 @@ const Footer = () => {
             <div className="mt-10 text-start flex">
               <ul className="space-y-5 text-xl font-bold">
                 <li className="hover:border-r-2 hover:border-b-2 hover:border-slate-600  pr-5">
-                  About
+                  <a
+                    href={
+                      window.location.pathname === "/mint"
+                        ? "/#collection"
+                        : "#collection"
+                    }
+                  >
+                    Collection
+                  </a>
                 </li>
                 <li className="hover:border-r-2 hover:border-b-2 hover:border-slate-600  pr-5">
-                  Collection
+                  <a href="/mint">Mint</a>
                 </li>
                 <li className="hover:border-r-2 hover:border-b-2 hover:border-slate-600  pr-5">
-                  Roadmap
+                  <a
+                    href={
+                      window.location.pathname === "/mint"
+                        ? "/#whyUs  "
+                        : "#whyUs"
+                    }
+                  >
+                    Why us
+                  </a>
                 </li>
                 <li className="hover:border-r-2 hover:border-b-2 hover:border-slate-600  pr-5">
-                  FAQs
+                  <a
+                    href={
+                      window.location.pathname === "/mint" ? "/#team " : "#team"
+                    }
+                  >
+                    Team
+                  </a>
+                </li>
+                <li className="hover:border-r-2 hover:border-b-2 hover:border-slate-600  pr-5">
+                  <a
+                    href={
+                      window.location.pathname === "/mint"
+                        ? "/#roadmap"
+                        : "#roadmap"
+                    }
+                  >
+                    Roadmap
+                  </a>
                 </li>
               </ul>
             </div>

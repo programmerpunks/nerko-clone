@@ -81,7 +81,7 @@ const Collection = () => {
   };
   return (
     <>
-      <div className="mx-[10%]">
+      <div className="mx-[10%]" id="collection">
         <div className="flex justify-center py-16">
           <img
             src={divider}

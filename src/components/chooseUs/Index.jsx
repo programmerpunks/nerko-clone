@@ -9,7 +9,7 @@ const divider = require("../../assets/shared/images/divider-01.svg").default;
 const ChooseUs = () => {
   return (
     <>
-      <div className="mx-[10%]">
+      <div className="mx-[10%]" id="whyUs">
         <div className="flex justify-center py-16">
           <img
             src={divider}

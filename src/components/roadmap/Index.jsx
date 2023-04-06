@@ -6,7 +6,7 @@ const divider = require("../../assets/shared/images/divider-01.svg").default;
 const Roadmap = () => {
   return (
     <>
-      <div className="mx-[10%]">
+      <div className="mx-[10%]" id="roadmap">
         <div className="flex justify-center py-16">
           <img
             src={divider}

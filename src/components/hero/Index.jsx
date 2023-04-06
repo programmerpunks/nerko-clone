@@ -13,7 +13,7 @@ import sponsor7 from "../../assets/hero/images/sponsor7.png";
 const Hero = () => {
   return (
     <>
-      <div className="mx-[10%] md:flex lg:px-[10%]">
+      <div className="mx-[10%] md:flex lg:px-[10%] pt-24">
         <div className=" lg:flex lg:items-center md:pt-[10%] lg:pt-[5%]">
           <div className="text-white text-center md:text-start space-y-8 lg:mr-10 ">
             <h1 className="text-6xl font-bold">Lorem Ipsum is the great</h1>
@@ -22,7 +22,9 @@ const Hero = () => {
               dont have to worry about anything.
             </p>
             <button className="rounded-full font-bold text-white py-3 px-5 bg-gradient-to-r from-[#2600fc] to-[#ff00ea]">
-              View in OPENSEA
+              <a href="https://opensea.io/" rel="noreferrer" target="_blank">
+                View in OPENSEA
+              </a>
             </button>
             <div class="flex justify-center md:justify-start">
               <div class="flex justify-center md:justify-start">
