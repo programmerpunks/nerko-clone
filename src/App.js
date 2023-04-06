@@ -7,10 +7,12 @@ import Roadmap from "./components/roadmap/Index";
 import Working from "./components/working/Index";
 import ChooseUs from "./components/chooseUs/Index";
 import Collection from "./components/collection/Index";
+import Hero from "./components/hero/Index";
 
 function App() {
   return (
     <div className="bg-[#110635]">
+      <Hero />
       <Collection />
       <ChooseUs />
       <Working />
