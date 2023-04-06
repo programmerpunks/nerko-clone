@@ -46,7 +46,7 @@ const ChooseUs = () => {
             alt=""
           />
         </div>
-        <div className="grid grid-cols-12 gap-">
+        <div className="grid grid-cols-12">
           {chooseUsStats.map((item) => {
             return (
               <React.Fragment key={item.id}>
