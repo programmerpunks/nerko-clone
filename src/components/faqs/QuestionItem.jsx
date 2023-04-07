@@ -3,7 +3,7 @@ import React from "react";
 const QuestionItem = ({ id, question, answer }) => {
   return (
     <>
-      <details>
+      <details data-aos="fade-up">
         <summary className="flex items-center">
           <div className="accordion-item flex w-full flex-wrap">
             <div className="font-Glacial leading-[30px] cursor-pointer w-full">

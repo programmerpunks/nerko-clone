@@ -4,7 +4,10 @@ import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 const RoadmapCard = ({ id, title, progress, paragraph, keypoints }) => {
   return (
     <>
-      <div className="border rounded-xl border-gray-700 col-span-12 lg:col-span-4 p-5 mx-auto">
+      <div
+        className="border rounded-xl border-gray-700 col-span-12 lg:col-span-4 p-5 mx-auto"
+        data-aos="fade-up"
+      >
         <div className="flex justify-between">
           <div className="text-xl bg-gradient-to-r from-[#2600fc] to-[#ff00ea] bg-clip-text text-transparent">
             PHASE {id}

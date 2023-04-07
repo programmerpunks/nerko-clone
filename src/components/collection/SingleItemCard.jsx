@@ -1,6 +1,6 @@
 import React from "react";
 
-const SingleItemCard = ({ id, title, image, maker }) => {
+const SingleItemCard = ({ title, image, maker }) => {
   return (
     <>
       <div className="flex m-2 justify-center flex-col space-y-5 lg:w-[80%]">

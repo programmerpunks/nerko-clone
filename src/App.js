@@ -1,24 +1,27 @@
-import React from "react";
-import "./App.css";
-import ArtistTeam from "./components/artistTeam/ArtistTeam";
-import Faq from "./components/faqs/Index";
-import Footer from "./components/footer/Index";
-import StartMinting from "./components/startMinting/Index";
-import Roadmap from "./components/roadmap/Index";
-import Working from "./components/working/Index";
-import ChooseUs from "./components/chooseUs/Index";
-import Collection from "./components/collection/Index";
-import Hero from "./components/hero/Index";
-import Navbar from "./components/navbar/Index";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ethers } from "ethers";
+import React from "react";
+import "react-toastify/dist/ReactToastify.css";
 import { ScrollContainer } from "react-scroll-motion";
 import { ToastContainer } from "react-toastify";
 import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import { useEffect, useState } from "react";
+
+import ArtistTeam from "./components/artistTeam/ArtistTeam";
+import ChooseUs from "./components/chooseUs/Index";
+import Collection from "./components/collection/Index";
 import { ContractABI } from "./assets/minting/content/contractABI";
+import Faq from "./components/faqs/Index";
+import Footer from "./components/footer/Index";
+import Hero from "./components/hero/Index";
 import Mint from "./components/mint/Index";
+import Navbar from "./components/navbar/Index";
+import Roadmap from "./components/roadmap/Index";
+import StartMinting from "./components/startMinting/Index";
+import Working from "./components/working/Index";
+import "./App.css";
 
 function App() {
   const [images, setImages] = useState([]);
@@ -87,6 +90,7 @@ function App() {
 
   useEffect(() => {
     connection();
+    Aos.init({ duration: 3000 });
   }, []);
 
   const readContract = async () => {

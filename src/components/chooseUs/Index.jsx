@@ -1,4 +1,5 @@
 import React from "react";
+
 import { chooseUsDetails } from "../../assets/chooseUs/content";
 import { chooseUsStats } from "../../assets/chooseUs/content/Stats";
 import ChooseCard from "./ChooseCard";
@@ -9,7 +10,7 @@ const divider = require("../../assets/shared/images/divider-01.svg").default;
 const ChooseUs = () => {
   return (
     <>
-      <div className="mx-[10%]" id="whyUs">
+      <div className="mx-[10%]" id="whyUs" data-aos="fade-up">
         <div className="flex justify-center py-16">
           <img
             src={divider}

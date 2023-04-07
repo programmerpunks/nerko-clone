@@ -1,4 +1,5 @@
 import React from "react";
+
 import { social_links } from "../../assets/footer/content/socialLinks";
 
 const Footer = () => {
@@ -6,7 +7,7 @@ const Footer = () => {
     <>
       <div className="py-5 text-white">
         <hr className="h-px my-8 bg-gray-700 border-0" />
-        <div className="mx-[10%] pt-14">
+        <div className="mx-[10%] pt-14" data-aos="fade-up">
           <div className="md:flex justify-between">
             <div className="md:w-[60%] lg:w-[50%] space-y-7">
               <h1 className="font-bold text-5xl text-white">Nerko</h1>

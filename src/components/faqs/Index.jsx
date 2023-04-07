@@ -1,12 +1,14 @@
 import React from "react";
+
 import { faqs } from "../../assets/faq/content";
 import QuestionItem from "./QuestionItem";
+
 const divider = require("../../assets/shared/images/divider-01.svg").default;
 
 const Faq = () => {
   return (
     <>
-      <div className="mx-[10%]">
+      <div className="mx-[10%]" data-aos="fade-up">
         <div className="flex justify-center py-16">
           <img
             src={divider}

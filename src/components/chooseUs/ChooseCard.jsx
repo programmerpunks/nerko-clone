@@ -1,4 +1,5 @@
 import React from "react";
+
 const ChooseCard = ({ id, heading, paragraph, icon }) => {
   return (
     <>
@@ -6,6 +7,7 @@ const ChooseCard = ({ id, heading, paragraph, icon }) => {
         className={`col-span-12 sm:col-span-6 lg:col-span-3 rounded-lg border border-gray-700 py-7 ${
           id % 2 === 0 ? "lg:my-10" : ""
         }`}
+        data-aos="fade-up"
       >
         <div className="space-y-5 px-[5%] pt-5">
           {icon}

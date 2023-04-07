@@ -1,6 +1,6 @@
+import { FaTwitterSquare, FaInstagramSquare } from "react-icons/fa";
 import React from "react";
 import { RiDiscordFill } from "react-icons/ri";
-import { FaTwitterSquare, FaInstagramSquare } from "react-icons/fa";
 
 const ArtistCard = ({
   id,
@@ -13,7 +13,10 @@ const ArtistCard = ({
 }) => {
   return (
     <>
-      <div className="col-span-12 sm:col-span-6 lg:col-span-3 mx-auto text-white justify-center mt-4">
+      <div
+        className="col-span-12 sm:col-span-6 lg:col-span-3 mx-auto text-white justify-center mt-4"
+        data-aos="fade-up"
+      >
         <div
           className={`rounded-3xl border border-gray-700 p-2 ${
             id % 2 === 0 ? "lg:mt-10" : ""

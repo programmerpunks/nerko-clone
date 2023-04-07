@@ -1,12 +1,14 @@
 import React from "react";
+
 import { artistsTeam } from "../../assets/artistsTeam/content";
 import ArtistCard from "./ArtistCard";
+
 const divider = require("../../assets/shared/images/divider-01.svg").default;
 
 const ArtistTeam = () => {
   return (
     <>
-      <div className="mx-[10%]" id="team">
+      <div className="mx-[10%]" id="team" data-aos="fade-up">
         <div className="flex justify-center py-16">
           <img
             src={divider}

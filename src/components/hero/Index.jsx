@@ -13,7 +13,7 @@ import sponsor7 from "../../assets/hero/images/sponsor7.png";
 const Hero = () => {
   return (
     <>
-      <div className="mx-[10%] md:flex lg:px-[10%] pt-24">
+      <div className="mx-[10%] md:flex lg:px-[10%] pt-24" data-aos="fade-up">
         <div className=" lg:flex lg:items-center md:pt-[10%] lg:pt-[5%]">
           <div className="text-white text-center md:text-start space-y-8 lg:mr-10 ">
             <h1 className="text-6xl font-bold">Lorem Ipsum is the great</h1>
@@ -26,15 +26,15 @@ const Hero = () => {
                 View in OPENSEA
               </a>
             </button>
-            <div class="flex justify-center md:justify-start">
-              <div class="flex justify-center md:justify-start">
-                <div class="w-14 self-center rounded-full border border-gray-700">
+            <div className="flex justify-center md:justify-start">
+              <div className="flex justify-center md:justify-start">
+                <div className="w-14 self-center rounded-full border border-gray-700">
                   <img src={pic1} alt="" className="rounded-full" />
                 </div>
-                <div class="-ml-[15%]  self-center w-14 border-solid rounded-full border border-gray-700">
+                <div className="-ml-[15%]  self-center w-14 border-solid rounded-full border border-gray-700">
                   <img src={pic2} alt="" className="rounded-full" />
                 </div>
-                <div class="-ml-[15%] self-center w-14 border-solid rounded-full border border-gray-700">
+                <div className="-ml-[15%] self-center w-14 border-solid rounded-full border border-gray-700">
                   <img src={pic3} alt="" className="rounded-full" />
                 </div>
               </div>
@@ -47,7 +47,10 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="py-14 lg:py-0 flex justify-center items-center">
+        <div
+          className="py-14 lg:py-0 flex justify-center items-center"
+          data-aos="fade-up"
+        >
           <div className="lg:pt-8">
             <div className="flex justify-start">
               <img
@@ -66,7 +69,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="mx-[10%] my-14 lg:my-[7%]">
+      <div className="mx-[10%] my-14 lg:my-[7%]" data-aos="fade-up">
         <div className="grid grid-cols-12 gap-5">
           <div className="col-span-6 lg:col-span-3 flex justify-center">
             <img src={sponsor4} alt="" />

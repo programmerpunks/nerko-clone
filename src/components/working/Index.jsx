@@ -1,12 +1,14 @@
 import React from "react";
-import { working_details } from "../../assets/working/content";
+
 import WorkingCard from "./WorkingCard";
+import { working_details } from "../../assets/working/content";
+
 const divider = require("../../assets/shared/images/divider-01.svg").default;
 
 const Working = () => {
   return (
     <>
-      <div className="mx-[10%]">
+      <div className="mx-[10%]" data-aos="fade-up">
         <div className="flex justify-center py-16">
           <img
             src={divider}

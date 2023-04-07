@@ -1,10 +1,9 @@
+import "react-toastify/dist/ReactToastify.css";
 import React, { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import { toast } from "react-toastify";
 
 import { ContractABI } from "../../assets/minting/content/contractABI";
-
-import "react-toastify/dist/ReactToastify.css";
 
 function Mint({
   connection,
@@ -82,7 +81,10 @@ function Mint({
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-[#110635]">
+    <div
+      className="flex flex-col items-center justify-center h-screen bg-[#110635]"
+      data-aos="fade-up"
+    >
       <div className="text-white text-2xl text-center font-bold bg-blue-light pb-5 bg-opacity-80">
         <div>
           Total minted: {userMintedAmount}/{maxMintAmount}

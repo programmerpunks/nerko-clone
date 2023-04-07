@@ -1,12 +1,14 @@
 import React from "react";
-import { roadmap } from "../../assets/roadmap/content";
+
 import RoadmapCard from "./RoadmapCard";
+import { roadmap } from "../../assets/roadmap/content";
+
 const divider = require("../../assets/shared/images/divider-01.svg").default;
 
 const Roadmap = () => {
   return (
     <>
-      <div className="mx-[10%]" id="roadmap">
+      <div className="mx-[10%]" id="roadmap" data-aos="fade-up">
         <div className="flex justify-center py-16">
           <img
             src={divider}

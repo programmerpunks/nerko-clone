@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+
 import { collections } from "../../assets/collection/content";
 import SingleItemCard from "./SingleItemCard";
 
@@ -7,6 +8,7 @@ const divider = require("../../assets/shared/images/divider-01.svg").default;
 
 function SampleNextArrow(props) {
   const { className, style, onClick, hideOnMobile } = props;
+
   return (
     <>
       <button
@@ -26,6 +28,7 @@ function SampleNextArrow(props) {
 
 function SamplePrevArrow(props) {
   const { className, style, onClick, hideOnMobile } = props;
+
   return (
     <div
       className={className}
@@ -79,9 +82,10 @@ const Collection = () => {
       },
     ],
   };
+
   return (
     <>
-      <div className="mx-[10%]" id="collection">
+      <div className="mx-[10%]" id="collection" data-aos="fade-up">
         <div className="flex justify-center py-16">
           <img
             src={divider}
@@ -101,12 +105,13 @@ const Collection = () => {
           <Slider {...settings}>
             {collections.map((item) => {
               return (
-                <SingleItemCard
-                  id={item.id}
-                  title={item.title}
-                  image={item.image}
-                  maker={item.maker}
-                />
+                <React.Fragment key={item.id}>
+                  <SingleItemCard
+                    title={item.title}
+                    image={item.image}
+                    maker={item.maker}
+                  />
+                </React.Fragment>
               );
             })}
           </Slider>
