@@ -1,4 +1,4 @@
-import { FaTwitterSquare, FaInstagramSquare } from "react-icons/fa";
+import { FaInstagramSquare, FaTwitterSquare } from "react-icons/fa";
 import { RiDiscordFill } from "react-icons/ri";
 
 export const social_links = [
